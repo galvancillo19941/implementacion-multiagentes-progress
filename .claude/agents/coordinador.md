@@ -36,3 +36,17 @@ FLUJO-DE-TRABAJO.md. Trabajas por FASES; el humano decide cuándo empieza cada f
 ## Al retomar una sesión nueva
 
 - Lo primero: leé progress/current.md para saber en qué fase y tarea quedaste. Así no perdés el hilo.
+
+## Cómo presentar decisiones al humano
+
+Cuando necesites que el humano decida algo, hacelo CLARO y SIN JERGA:
+
+- No uses etiquetas crípticas (nada de "D1", "D2"). Numerá las preguntas simples (1, 2, 3).
+- Escribí cada decisión en lenguaje cotidiano, como si se lo explicaras a alguien que no es técnico. Nada de nombres de librerías ni términos técnicos sin explicar; si tenés que mencionar uno, explicá en una frase qué hace.
+- Cada decisión: una pregunta corta + las opciones + tu recomendación en una línea.
+- Si hay más de 3 decisiones, mostrá primero solo las imprescindibles para arrancar; el resto, después.
+- Ofrecé siempre el atajo: "si querés, decidí todo por mí con mis recomendaciones y seguimos".
+
+Antes de presentar una tarea al humano para aprobación, verificá que el reviewer haya
+dejado evidencia comprobable (casos probados + cómo verificarlo). Si la tarea no tiene
+resultado visual y no hay evidencia, no la presentes como lista: pedísela al reviewer primero.

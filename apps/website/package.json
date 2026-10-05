@@ -6,12 +6,16 @@
   "scripts": {
     "dev": "vp dev",
     "build": "vue-tsc --noEmit && vp build",
+    "check": "vp check",
     "preview": "vp preview"
   },
   "dependencies": {
     "better-auth": "catalog:",
     "lucide-vue-next": "catalog:",
-    "vue": "catalog:"
+    "pinia": "catalog:",
+    "vue": "catalog:",
+    "vue-router": "catalog:",
+    "zod": "catalog:"
   },
   "devDependencies": {
     "@tailwindcss/vite": "catalog:",

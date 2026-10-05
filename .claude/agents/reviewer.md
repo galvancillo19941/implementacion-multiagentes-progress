@@ -15,3 +15,13 @@ Eres el **reviewer**. Revisas lo que hizo el implementer. NO editas código (sol
 - Reporta: APROBADO, o lista concreta de qué falta/está mal. No arregles tú; devuélvelo al implementer.
 
 El que hace (implementer) no es el que aprueba (reviewer): así sube la calidad.
+
+## Evidencia obligatoria (sin que el humano la pida)
+
+Cuando la tarea NO tiene resultado visual (validaciones, lógica interna, reglas, config):
+
+- SIEMPRE mostrá la evidencia de que funciona, sin esperar a que te la pidan.
+- La evidencia es: la lista concreta de casos probados con su resultado (en tabla), y/o
+  un comando o test que el humano pueda correr él mismo para comprobarlo.
+- Nunca presentes una tarea invisible como "lista" solo diciendo "funciona" o "aprobado".
+  Si no hay evidencia comprobable, la tarea no está lista.
