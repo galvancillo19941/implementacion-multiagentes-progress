@@ -5,16 +5,28 @@ import { z } from "zod";
  * Textos en voseo rioplatense. Cada error queda en el `path` de su campo.
  */
 
+export const PASSWORD_MIN_LENGTH = 8;
+
+/**
+ * Textos de los formularios de login y registro: errores de cada campo y mensajes generales
+ * (arriba del formulario) que deja el store de sesión.
+ */
 export const AUTH_MESSAGES = {
   emailRequired: "El email es obligatorio",
   emailInvalid: "Ingresá un email válido",
   passwordRequired: "La contraseña es obligatoria",
-  passwordMin: "La contraseña debe tener al menos 8 caracteres",
+  passwordMin: `La contraseña debe tener al menos ${PASSWORD_MIN_LENGTH} caracteres`,
   confirmPasswordRequired: "Confirmá tu contraseña",
   passwordsMismatch: "Las contraseñas no coinciden",
+  /** Login: mismo texto para email inexistente y contraseña incorrecta. */
+  invalidCredentials: "Email o contraseña incorrectos",
+  /** Login: falla inesperada al verificar o al guardar la sesión. */
+  loginFailed: "No pudimos procesar el ingreso. Probá de nuevo.",
+  /** Registro: el email ya está registrado. */
+  emailTaken: "Ya existe una cuenta con ese email",
+  /** Registro: falla inesperada al crear la cuenta o al guardar la sesión. */
+  registerFailed: "No pudimos completar el registro. Probá de nuevo.",
 } as const;
-
-export const PASSWORD_MIN_LENGTH = 8;
 
 /**
  * Email: se recorta y pasa a minúsculas ("   " cuenta como vacío).

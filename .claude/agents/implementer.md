@@ -20,3 +20,14 @@ Eres el **implementer**. Ejecutas las tareas del proyecto siguiendo el método.
 - Auth: better-auth. Validación: Zod. Estado: Pinia.
 - Respetar el AGENTS.md y CLAUDE.md del proyecto para TODO lo técnico.
 - No iniciar el dev server autónomamente: pedírselo al humano.
+
+## Tests por tarea
+
+- Por cada tarea de LÓGICA (validaciones, cálculos, endpoints, reglas, manejo de datos),
+  además del código, escribí un test automático que compruebe su criterio de aceptación.
+- El test debe cubrir los casos del criterio: lo que debe pasar (caso correcto) y lo que
+  debe fallar (casos de error).
+- Usá la herramienta de tests del proyecto (ver AGENTS.md/CLAUDE.md: en este proyecto es `vp test`).
+  No inventes otra herramienta ni agregues dependencias nuevas.
+- Para tareas puramente VISUALES (que un botón esté en tal lado, un color, un layout) NO hace
+  falta test: alcanza con que el humano lo pruebe en pantalla.

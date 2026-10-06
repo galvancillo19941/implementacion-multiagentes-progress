@@ -1,5 +1,10 @@
+<script setup lang="ts">
+import AuthLayout from "../components/auth/AuthLayout.vue";
+import LoginForm from "../components/auth/LoginForm.vue";
+</script>
+
 <template>
-  <main class="min-h-screen bg-white p-8">
-    <h1 class="text-2xl font-bold text-gray-900">Iniciá sesión</h1>
-  </main>
+  <AuthLayout>
+    <LoginForm />
+  </AuthLayout>
 </template>
